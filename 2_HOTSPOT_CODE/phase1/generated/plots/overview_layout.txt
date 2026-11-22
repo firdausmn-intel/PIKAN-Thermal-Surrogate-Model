@@ -1,0 +1,7 @@
+row=0 col=0 layer=0 minimum_kelvin=321.44 maximum_kelvin=321.57
+row=0 col=1 layer=1 minimum_kelvin=320.94 maximum_kelvin=321.05
+row=0 col=2 layer=2 minimum_kelvin=320.48 maximum_kelvin=320.60
+row=1 col=0 layer=3 minimum_kelvin=319.57 maximum_kelvin=319.67
+row=1 col=1 layer=4 minimum_kelvin=318.66 maximum_kelvin=318.75
+row=1 col=2 layer=5 minimum_kelvin=318.27 maximum_kelvin=318.33
+row=2 col=0 layer=6 minimum_kelvin=318.18 maximum_kelvin=318.18

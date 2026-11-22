@@ -1,0 +1,41 @@
+{
+  "test_name": "preset_single_center",
+  "cell_powers_w": [
+    5e-08,
+    5e-08,
+    5e-08,
+    0.00045,
+    5e-08,
+    5e-08,
+    5e-08,
+    5e-08
+  ],
+  "total_power_w": 0.00045034999999999986,
+  "ground_truth_hotspot": {
+    "min_temp_k": 321.39007568359375,
+    "max_temp_k": 323.54998779296875,
+    "temp_delta_k": 2.159912109375,
+    "pde_residual_mean": 0.5382683873176575,
+    "pde_residual_rms": 0.7858908772468567
+  },
+  "pino_mlp": {
+    "min_temp_k": 320.6681823730469,
+    "max_temp_k": 322.75299072265625,
+    "mae_k": 0.8851696252822876,
+    "rmse_k": 0.9147498607635498,
+    "peak_error_k": 0.7969970703125,
+    "max_pointwise_error_k": 1.183135986328125,
+    "pde_residual_mean": 0.15113213658332825,
+    "pde_residual_rms": 0.24586567282676697
+  },
+  "pikan_kan": {
+    "min_temp_k": 320.625732421875,
+    "max_temp_k": 323.035888671875,
+    "mae_k": 0.7833438515663147,
+    "rmse_k": 0.835077702999115,
+    "peak_error_k": 0.51409912109375,
+    "max_pointwise_error_k": 1.198150634765625,
+    "pde_residual_mean": 0.15849220752716064,
+    "pde_residual_rms": 0.27062901854515076
+  }
+}

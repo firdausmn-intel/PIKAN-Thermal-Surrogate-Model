@@ -1,0 +1,11 @@
+rows=256
+cols=256
+power_rows=10
+power_cols=10
+width_m=0.001
+height_m=0.001
+thickness_m=0.00055
+active_layers=0,2,4
+low_power_w=0.0005
+high_power_w=0.002
+high_power_fraction=0.10

@@ -1,0 +1,133 @@
+{
+  "checkpoints": "phase3d_v2\\checkpoints\\fixed_w1_seed23",
+  "pattern_summary": [
+    {
+      "model": "fno_kan",
+      "pattern": "cross_tier_offset",
+      "cases": 4,
+      "mae_k": {
+        "lower": 0.021116897463798523,
+        "tim": 0.018629401922225952,
+        "upper": 0.006563201546669006
+      },
+      "peak_error_k": {
+        "lower": 0.0600128173828125,
+        "tim": 0.05499267578125,
+        "upper": 0.0099945068359375
+      },
+      "block_residual_rms_w": 0.00040196231566369534
+    },
+    {
+      "model": "fno_kan",
+      "pattern": "cross_tier_stacked",
+      "cases": 4,
+      "mae_k": {
+        "lower": 0.023873835802078247,
+        "tim": 0.021607592701911926,
+        "upper": 0.007776930928230286
+      },
+      "peak_error_k": {
+        "lower": 0.07000732421875,
+        "tim": 0.0649871826171875,
+        "upper": 0.0149993896484375
+      },
+      "block_residual_rms_w": 0.00038294214755296707
+    },
+    {
+      "model": "fno_kan",
+      "pattern": "dual_adjacent",
+      "cases": 8,
+      "mae_k": {
+        "lower": 0.02337684854865074,
+        "tim": 0.020342033356428146,
+        "upper": 0.006696391850709915
+      },
+      "peak_error_k": {
+        "lower": 0.052600860595703125,
+        "tim": 0.044307708740234375,
+        "upper": 0.00887298583984375
+      },
+      "block_residual_rms_w": 0.0005590030923485756
+    },
+    {
+      "model": "fno_kan",
+      "pattern": "dual_separated",
+      "cases": 8,
+      "mae_k": {
+        "lower": 0.02135191112756729,
+        "tim": 0.018267162144184113,
+        "upper": 0.006974168121814728
+      },
+      "peak_error_k": {
+        "lower": 0.05023193359375,
+        "tim": 0.050384521484375,
+        "upper": 0.0103607177734375
+      },
+      "block_residual_rms_w": 0.00044298687134869397
+    },
+    {
+      "model": "fno_mlp",
+      "pattern": "cross_tier_offset",
+      "cases": 4,
+      "mae_k": {
+        "lower": 0.018357306718826294,
+        "tim": 0.015822455286979675,
+        "upper": 0.006095394492149353
+      },
+      "peak_error_k": {
+        "lower": 0.0600128173828125,
+        "tim": 0.05499267578125,
+        "upper": 0.0130157470703125
+      },
+      "block_residual_rms_w": 0.00030105997575446963
+    },
+    {
+      "model": "fno_mlp",
+      "pattern": "cross_tier_stacked",
+      "cases": 4,
+      "mae_k": {
+        "lower": 0.02093440294265747,
+        "tim": 0.0189782977104187,
+        "upper": 0.0076147764921188354
+      },
+      "peak_error_k": {
+        "lower": 0.07000732421875,
+        "tim": 0.0649871826171875,
+        "upper": 0.0149993896484375
+      },
+      "block_residual_rms_w": 0.00031662514084018767
+    },
+    {
+      "model": "fno_mlp",
+      "pattern": "dual_adjacent",
+      "cases": 8,
+      "mae_k": {
+        "lower": 0.018389735370874405,
+        "tim": 0.016874898225069046,
+        "upper": 0.006785932928323746
+      },
+      "peak_error_k": {
+        "lower": 0.039020538330078125,
+        "tim": 0.037143707275390625,
+        "upper": 0.00881195068359375
+      },
+      "block_residual_rms_w": 0.0003146931412629783
+    },
+    {
+      "model": "fno_mlp",
+      "pattern": "dual_separated",
+      "cases": 8,
+      "mae_k": {
+        "lower": 0.014772459864616394,
+        "tim": 0.013614065945148468,
+        "upper": 0.0068172886967659
+      },
+      "peak_error_k": {
+        "lower": 0.0412445068359375,
+        "tim": 0.041473388671875,
+        "upper": 0.01177978515625
+      },
+      "block_residual_rms_w": 0.00032660909346304834
+    }
+  ]
+}

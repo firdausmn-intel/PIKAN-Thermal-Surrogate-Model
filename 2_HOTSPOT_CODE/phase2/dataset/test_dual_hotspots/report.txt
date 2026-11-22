@@ -1,0 +1,45 @@
+
+========================================================================
+                      THERMAL MAP EVALUATION REPORT
+========================================================================
+Test Scenario:      preset_dual_hotspots
+Total Power:        7.5030e-04 W
+Domain Dimensions:  8 abutted SKY130 inverter cells (11.04 um x 3.20 um)
+Grid Resolution:    256x1024 -> pooled 64x256
+
+--- GROUND TRUTH (HotSpot 3D FDM) ---
+Min Temperature:    323.3599 K
+Peak Temperature:   326.0200 K
+Thermal Gradient:   2.6601 K
+
+--- PINO OPERATOR (MLP Trunk) ---
+Peak Prediction:    322.2045 K
+Peak Error:         3.8155 K
+MAE:                3.4112 K
+RMSE:               3.4337 K
+Max Point Error:    4.2179 K
+PDE Residual (RMS): 0.3408
+
+--- PIKAN OPERATOR (KAN Trunk) ---
+Peak Prediction:    322.2022 K
+Peak Error:         3.8177 K
+MAE:                3.3451 K
+RMSE:               3.3657 K
+Max Point Error:    4.1194 K
+PDE Residual (RMS): 0.7110
+
+--- COMPARATIVE SUMMARY ---
+MAE Winner:         PIKAN (Difference: 0.0661 K)
+Peak Error Winner:  PINO (Difference: 0.0023 K)
+PDE Physics Winner: PINO (Difference: 0.3702)
+========================================================================
+Artifacts saved to: phase2\dataset\test_dual_hotspots
+  - hotspot_ground_truth.png
+  - pino_prediction.png
+  - pikan_prediction.png
+  - pino_absolute_error.png
+  - pikan_absolute_error.png
+  - prediction_comparison.png
+  - error_comparison.png
+  - metrics_report.json
+========================================================================

@@ -1,0 +1,133 @@
+{
+  "checkpoints": "phase3d_v2\\checkpoints\\fixed_w10_seed7",
+  "pattern_summary": [
+    {
+      "model": "fno_kan",
+      "pattern": "background_shift",
+      "cases": 8,
+      "mae_k": {
+        "lower": 0.0683380514383316,
+        "tim": 0.06420541554689407,
+        "upper": 0.009481169283390045
+      },
+      "peak_error_k": {
+        "lower": 0.09803009033203125,
+        "tim": 0.0890655517578125,
+        "upper": 0.0226593017578125
+      },
+      "block_residual_rms_w": 0.000862856104504317
+    },
+    {
+      "model": "fno_kan",
+      "pattern": "high_power",
+      "cases": 8,
+      "mae_k": {
+        "lower": 0.11890405416488647,
+        "tim": 0.10544852912425995,
+        "upper": 0.037678252905607224
+      },
+      "peak_error_k": {
+        "lower": 0.28112030029296875,
+        "tim": 0.22163772583007812,
+        "upper": 0.204833984375
+      },
+      "block_residual_rms_w": 0.002177530201151967
+    },
+    {
+      "model": "fno_kan",
+      "pattern": "many_hotspots",
+      "cases": 8,
+      "mae_k": {
+        "lower": 0.10270719230175018,
+        "tim": 0.09021574258804321,
+        "upper": 0.029569867998361588
+      },
+      "peak_error_k": {
+        "lower": 0.22861862182617188,
+        "tim": 0.17639923095703125,
+        "upper": 0.07782745361328125
+      },
+      "block_residual_rms_w": 0.0022754480596631765
+    },
+    {
+      "model": "fno_kan",
+      "pattern": "mixed_power_pair",
+      "cases": 8,
+      "mae_k": {
+        "lower": 0.07843293249607086,
+        "tim": 0.07002691179513931,
+        "upper": 0.023093104362487793
+      },
+      "peak_error_k": {
+        "lower": 0.10996246337890625,
+        "tim": 0.1010589599609375,
+        "upper": 0.086151123046875
+      },
+      "block_residual_rms_w": 0.0011376359034329653
+    },
+    {
+      "model": "fno_mlp",
+      "pattern": "background_shift",
+      "cases": 8,
+      "mae_k": {
+        "lower": 0.04491407051682472,
+        "tim": 0.04165106266736984,
+        "upper": 0.00830431655049324
+      },
+      "peak_error_k": {
+        "lower": 0.08021926879882812,
+        "tim": 0.06653976440429688,
+        "upper": 0.016147613525390625
+      },
+      "block_residual_rms_w": 0.0003608008846640587
+    },
+    {
+      "model": "fno_mlp",
+      "pattern": "high_power",
+      "cases": 8,
+      "mae_k": {
+        "lower": 0.13675546646118164,
+        "tim": 0.11661724746227264,
+        "upper": 0.04328712448477745
+      },
+      "peak_error_k": {
+        "lower": 0.49733734130859375,
+        "tim": 0.3463706970214844,
+        "upper": 0.27410888671875
+      },
+      "block_residual_rms_w": 0.0015621231868863106
+    },
+    {
+      "model": "fno_mlp",
+      "pattern": "many_hotspots",
+      "cases": 8,
+      "mae_k": {
+        "lower": 0.11579979956150055,
+        "tim": 0.09596260637044907,
+        "upper": 0.03248632326722145
+      },
+      "peak_error_k": {
+        "lower": 0.31313323974609375,
+        "tim": 0.2195892333984375,
+        "upper": 0.0786285400390625
+      },
+      "block_residual_rms_w": 0.0012371507473289967
+    },
+    {
+      "model": "fno_mlp",
+      "pattern": "mixed_power_pair",
+      "cases": 8,
+      "mae_k": {
+        "lower": 0.08539934456348419,
+        "tim": 0.07223571836948395,
+        "upper": 0.024238720536231995
+      },
+      "peak_error_k": {
+        "lower": 0.17162704467773438,
+        "tim": 0.10436630249023438,
+        "upper": 0.08844757080078125
+      },
+      "block_residual_rms_w": 0.0009810872143134475
+    }
+  ]
+}

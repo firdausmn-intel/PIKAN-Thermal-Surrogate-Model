@@ -1,0 +1,41 @@
+{
+  "test_name": "preset_dual_hotspots",
+  "cell_powers_w": [
+    5e-08,
+    0.0004,
+    5e-08,
+    5e-08,
+    0.00035,
+    5e-08,
+    5e-08,
+    5e-08
+  ],
+  "total_power_w": 0.0007503000000000001,
+  "ground_truth_hotspot": {
+    "min_temp_k": 323.35992431640625,
+    "max_temp_k": 326.0199890136719,
+    "temp_delta_k": 2.660064697265625,
+    "pde_residual_mean": 0.6422865390777588,
+    "pde_residual_rms": 0.8839802742004395
+  },
+  "pino_mlp": {
+    "min_temp_k": 320.60400390625,
+    "max_temp_k": 322.20452880859375,
+    "mae_k": 3.4111979007720947,
+    "rmse_k": 3.433743715286255,
+    "peak_error_k": 3.815460205078125,
+    "max_pointwise_error_k": 4.217926025390625,
+    "pde_residual_mean": 0.2611888647079468,
+    "pde_residual_rms": 0.3407726287841797
+  },
+  "pikan_kan": {
+    "min_temp_k": 320.67669677734375,
+    "max_temp_k": 322.2022399902344,
+    "mae_k": 3.3450911045074463,
+    "rmse_k": 3.365710735321045,
+    "peak_error_k": 3.8177490234375,
+    "max_pointwise_error_k": 4.119415283203125,
+    "pde_residual_mean": 0.3381999731063843,
+    "pde_residual_rms": 0.7109706401824951
+  }
+}

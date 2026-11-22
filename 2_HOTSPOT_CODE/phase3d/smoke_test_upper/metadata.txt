@@ -1,0 +1,17 @@
+experiment=phase3d_two_tier_smoke_test
+stack_order=layer_0_tier_0,layer_1_tim,layer_2_tier_1
+grid_rows=32
+grid_cols=32
+power_rows=4
+power_cols=4
+width_m=0.001
+height_m=0.001
+silicon_thickness_m=0.00015
+tim_thickness_m=5e-05
+hot_tier=1
+hot_row=1
+hot_col=1
+low_power_w=0.0005
+high_power_w=0.002
+inactive_tier_power_w=0
+power_units=watts_per_floorplan_tile

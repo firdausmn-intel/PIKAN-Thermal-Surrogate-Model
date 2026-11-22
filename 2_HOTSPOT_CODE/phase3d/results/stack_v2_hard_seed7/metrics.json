@@ -1,0 +1,2894 @@
+{
+  "experiment": "two-tier single-hotspot training, dual and cross-tier held-out testing",
+  "dataset": "phase3d\\dataset\\stack_v2",
+  "checkpoints": "phase3d\\checkpoints\\stack_v2_seed7",
+  "layers": [
+    "lower_tier",
+    "tim",
+    "upper_tier"
+  ],
+  "pattern_summary": [
+    {
+      "model": "cnn3d",
+      "pattern": "background_shift",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.6819730289280415,
+        "tim": 0.6399465724825859,
+        "upper_tier": 0.11531209200620651
+      },
+      "rmse_k": {
+        "lower_tier": 0.690498773008585,
+        "tim": 0.6508312560617924,
+        "upper_tier": 0.11850638454779983
+      },
+      "peak_error_k": {
+        "lower_tier": 0.7750511169433594,
+        "tim": 0.7852516174316406,
+        "upper_tier": 0.09410858154296875
+      }
+    },
+    {
+      "model": "cnn3d",
+      "pattern": "high_power",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.10823594778776169,
+        "tim": 0.09947622939944267,
+        "upper_tier": 0.01829950138926506
+      },
+      "rmse_k": {
+        "lower_tier": 0.13846985809504986,
+        "tim": 0.126351288985461,
+        "upper_tier": 0.02394779259338975
+      },
+      "peak_error_k": {
+        "lower_tier": 0.17433547973632812,
+        "tim": 0.117767333984375,
+        "upper_tier": 0.0053253173828125
+      }
+    },
+    {
+      "model": "cnn3d",
+      "pattern": "many_hotspots",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.14192254841327667,
+        "tim": 0.12994753196835518,
+        "upper_tier": 0.03166317567229271
+      },
+      "rmse_k": {
+        "lower_tier": 0.16123579442501068,
+        "tim": 0.14656838355585933,
+        "upper_tier": 0.03521196893416345
+      },
+      "peak_error_k": {
+        "lower_tier": 0.06638717651367188,
+        "tim": 0.09300994873046875,
+        "upper_tier": 0.047718048095703125
+      }
+    },
+    {
+      "model": "cnn3d",
+      "pattern": "mixed_power_pair",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.06787390634417534,
+        "tim": 0.061179984360933304,
+        "upper_tier": 0.013225063681602478
+      },
+      "rmse_k": {
+        "lower_tier": 0.08461724710650742,
+        "tim": 0.0763638794887811,
+        "upper_tier": 0.016303491953294724
+      },
+      "peak_error_k": {
+        "lower_tier": 0.037109375,
+        "tim": 0.02386474609375,
+        "upper_tier": 0.01354217529296875
+      }
+    },
+    {
+      "model": "fno_kan",
+      "pattern": "background_shift",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.3359393961727619,
+        "tim": 0.31111573800444603,
+        "upper_tier": 0.09294707328081131
+      },
+      "rmse_k": {
+        "lower_tier": 0.3387305159121752,
+        "tim": 0.3136565927416086,
+        "upper_tier": 0.09446755051612854
+      },
+      "peak_error_k": {
+        "lower_tier": 0.2853279113769531,
+        "tim": 0.2623023986816406,
+        "upper_tier": 0.044162750244140625
+      }
+    },
+    {
+      "model": "fno_kan",
+      "pattern": "high_power",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.12263358384370804,
+        "tim": 0.11185023561120033,
+        "upper_tier": 0.029842760413885117
+      },
+      "rmse_k": {
+        "lower_tier": 0.15793904289603233,
+        "tim": 0.14436991652473807,
+        "upper_tier": 0.03989221923984587
+      },
+      "peak_error_k": {
+        "lower_tier": 0.30814361572265625,
+        "tim": 0.2805976867675781,
+        "upper_tier": 0.03961944580078125
+      }
+    },
+    {
+      "model": "fno_kan",
+      "pattern": "many_hotspots",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.11590787023305893,
+        "tim": 0.10533633455634117,
+        "upper_tier": 0.028554100543260574
+      },
+      "rmse_k": {
+        "lower_tier": 0.14267378766089678,
+        "tim": 0.1292697531171143,
+        "upper_tier": 0.03580862167291343
+      },
+      "peak_error_k": {
+        "lower_tier": 0.10053253173828125,
+        "tim": 0.08932113647460938,
+        "upper_tier": 0.0415191650390625
+      }
+    },
+    {
+      "model": "fno_kan",
+      "pattern": "mixed_power_pair",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.06909224390983582,
+        "tim": 0.0627756230533123,
+        "upper_tier": 0.01749292016029358
+      },
+      "rmse_k": {
+        "lower_tier": 0.08832173002883792,
+        "tim": 0.07991172885522246,
+        "upper_tier": 0.02375203720293939
+      },
+      "peak_error_k": {
+        "lower_tier": 0.1395111083984375,
+        "tim": 0.12638092041015625,
+        "upper_tier": 0.053401947021484375
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "pattern": "background_shift",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.17295260727405548,
+        "tim": 0.16811218857765198,
+        "upper_tier": 0.0665123388171196
+      },
+      "rmse_k": {
+        "lower_tier": 0.1768178455531597,
+        "tim": 0.17118597589433193,
+        "upper_tier": 0.06764975003898144
+      },
+      "peak_error_k": {
+        "lower_tier": 0.15299224853515625,
+        "tim": 0.14542388916015625,
+        "upper_tier": 0.03759002685546875
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "pattern": "high_power",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.09161805734038353,
+        "tim": 0.08268407359719276,
+        "upper_tier": 0.02483554184436798
+      },
+      "rmse_k": {
+        "lower_tier": 0.12237233784981072,
+        "tim": 0.1102061946876347,
+        "upper_tier": 0.03520842455327511
+      },
+      "peak_error_k": {
+        "lower_tier": 0.2725830078125,
+        "tim": 0.21904373168945312,
+        "upper_tier": 0.048309326171875
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "pattern": "many_hotspots",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.06883598864078522,
+        "tim": 0.06460592523217201,
+        "upper_tier": 0.023881398141384125
+      },
+      "rmse_k": {
+        "lower_tier": 0.08905951026827097,
+        "tim": 0.08349762577563524,
+        "upper_tier": 0.031367287039756775
+      },
+      "peak_error_k": {
+        "lower_tier": 0.09324264526367188,
+        "tim": 0.08038330078125,
+        "upper_tier": 0.025852203369140625
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "pattern": "mixed_power_pair",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.06132080778479576,
+        "tim": 0.05608781427145004,
+        "upper_tier": 0.016273289918899536
+      },
+      "rmse_k": {
+        "lower_tier": 0.07919490663334727,
+        "tim": 0.07228339416906238,
+        "upper_tier": 0.022389486781321466
+      },
+      "peak_error_k": {
+        "lower_tier": 0.14155960083007812,
+        "tim": 0.12740707397460938,
+        "upper_tier": 0.0435791015625
+      }
+    },
+    {
+      "model": "train_mean",
+      "pattern": "background_shift",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.5489957667887211,
+        "tim": 0.5040129497647285,
+        "upper_tier": 0.12905199825763702
+      },
+      "rmse_k": {
+        "lower_tier": 0.5502914935350418,
+        "tim": 0.5051553919911385,
+        "upper_tier": 0.12984988559037447
+      },
+      "peak_error_k": {
+        "lower_tier": 0.5200004577636719,
+        "tim": 0.4762535095214844,
+        "upper_tier": 0.10500335693359375
+      }
+    },
+    {
+      "model": "train_mean",
+      "pattern": "high_power",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.35570264607667923,
+        "tim": 0.32350917160511017,
+        "upper_tier": 0.07576803117990494
+      },
+      "rmse_k": {
+        "lower_tier": 0.4024789845570922,
+        "tim": 0.3670184127986431,
+        "upper_tier": 0.10477010952308774
+      },
+      "peak_error_k": {
+        "lower_tier": 0.8856048583984375,
+        "tim": 0.8032112121582031,
+        "upper_tier": 0.33824920654296875
+      }
+    },
+    {
+      "model": "train_mean",
+      "pattern": "many_hotspots",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.3594977967441082,
+        "tim": 0.3286607973277569,
+        "upper_tier": 0.08769857883453369
+      },
+      "rmse_k": {
+        "lower_tier": 0.3826286285184324,
+        "tim": 0.34908115677535534,
+        "upper_tier": 0.1061055101454258
+      },
+      "peak_error_k": {
+        "lower_tier": 0.6815261840820312,
+        "tim": 0.6201820373535156,
+        "upper_tier": 0.26200103759765625
+      }
+    },
+    {
+      "model": "train_mean",
+      "pattern": "mixed_power_pair",
+      "cases": 8,
+      "mae_k": {
+        "lower_tier": 0.14616981893777847,
+        "tim": 0.13114283606410027,
+        "upper_tier": 0.029633626341819763
+      },
+      "rmse_k": {
+        "lower_tier": 0.19070473546162248,
+        "tim": 0.17126158066093922,
+        "upper_tier": 0.05093836155720055
+      },
+      "peak_error_k": {
+        "lower_tier": 0.5412025451660156,
+        "tim": 0.4826774597167969,
+        "upper_tier": 0.18199920654296875
+      }
+    }
+  ],
+  "case_metrics": [
+    {
+      "model": "train_mean",
+      "case": "hard_many_hotspots_00",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.5840668678283691,
+        "tim": 0.5307066440582275,
+        "upper_tier": 0.08755174279212952
+      },
+      "rmse_k": {
+        "lower_tier": 0.6020892858505249,
+        "tim": 0.5470161437988281,
+        "upper_tier": 0.10293669253587723
+      },
+      "peak_error_k": {
+        "lower_tier": 0.97369384765625,
+        "tim": 0.878936767578125,
+        "upper_tier": 0.2969970703125
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_many_hotspots_01",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.04671025276184082,
+        "tim": 0.03819870948791504,
+        "upper_tier": 0.08776319026947021
+      },
+      "rmse_k": {
+        "lower_tier": 0.0526859425008297,
+        "tim": 0.04494909942150116,
+        "upper_tier": 0.12670840322971344
+      },
+      "peak_error_k": {
+        "lower_tier": 0.00628662109375,
+        "tim": 0.0289306640625,
+        "upper_tier": 0.266998291015625
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_many_hotspots_02",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.5839873552322388,
+        "tim": 0.5306373238563538,
+        "upper_tier": 0.08757913112640381
+      },
+      "rmse_k": {
+        "lower_tier": 0.5905789136886597,
+        "tim": 0.5360251665115356,
+        "upper_tier": 0.09797855466604233
+      },
+      "peak_error_k": {
+        "lower_tier": 0.8037109375,
+        "tim": 0.72894287109375,
+        "upper_tier": 0.277008056640625
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_many_hotspots_03",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.16393885016441345,
+        "tim": 0.15563780069351196,
+        "upper_tier": 0.08741441369056702
+      },
+      "rmse_k": {
+        "lower_tier": 0.21954509615898132,
+        "tim": 0.20265018939971924,
+        "upper_tier": 0.11078156530857086
+      },
+      "peak_error_k": {
+        "lower_tier": 0.703704833984375,
+        "tim": 0.638916015625,
+        "upper_tier": 0.277008056640625
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_many_hotspots_04",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.37453365325927734,
+        "tim": 0.343919962644577,
+        "upper_tier": 0.08784374594688416
+      },
+      "rmse_k": {
+        "lower_tier": 0.3857437074184418,
+        "tim": 0.3529263734817505,
+        "upper_tier": 0.10232360661029816
+      },
+      "peak_error_k": {
+        "lower_tier": 0.633697509765625,
+        "tim": 0.568939208984375,
+        "upper_tier": 0.217010498046875
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_many_hotspots_05",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.5843501687049866,
+        "tim": 0.5310679078102112,
+        "upper_tier": 0.08789381384849548
+      },
+      "rmse_k": {
+        "lower_tier": 0.6238077878952026,
+        "tim": 0.566328227519989,
+        "upper_tier": 0.09874363988637924
+      },
+      "peak_error_k": {
+        "lower_tier": 1.203704833984375,
+        "tim": 1.08892822265625,
+        "upper_tier": 0.23699951171875
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_many_hotspots_06",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.3739383816719055,
+        "tim": 0.34305092692375183,
+        "upper_tier": 0.08765783905982971
+      },
+      "rmse_k": {
+        "lower_tier": 0.3832153081893921,
+        "tim": 0.3507661521434784,
+        "upper_tier": 0.1013074442744255
+      },
+      "peak_error_k": {
+        "lower_tier": 0.60369873046875,
+        "tim": 0.548919677734375,
+        "upper_tier": 0.256988525390625
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_many_hotspots_07",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.16445684432983398,
+        "tim": 0.1560671031475067,
+        "upper_tier": 0.08788475394248962
+      },
+      "rmse_k": {
+        "lower_tier": 0.20336298644542694,
+        "tim": 0.19198790192604065,
+        "upper_tier": 0.10806417465209961
+      },
+      "peak_error_k": {
+        "lower_tier": 0.523712158203125,
+        "tim": 0.47894287109375,
+        "upper_tier": 0.266998291015625
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_mixed_power_00_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.04584181308746338,
+        "tim": 0.039609432220458984,
+        "upper_tier": 0.036710262298583984
+      },
+      "rmse_k": {
+        "lower_tier": 0.04978165403008461,
+        "tim": 0.04391340911388397,
+        "upper_tier": 0.08237403631210327
+      },
+      "peak_error_k": {
+        "lower_tier": 0.043701171875,
+        "tim": 0.0389404296875,
+        "upper_tier": 0.36700439453125
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_mixed_power_00_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.23973959684371948,
+        "tim": 0.2165265679359436,
+        "upper_tier": 0.023277491331100464
+      },
+      "rmse_k": {
+        "lower_tier": 0.3000594675540924,
+        "tim": 0.2699088156223297,
+        "upper_tier": 0.02845892310142517
+      },
+      "peak_error_k": {
+        "lower_tier": 0.793701171875,
+        "tim": 0.70892333984375,
+        "upper_tier": 0.0570068359375
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_mixed_power_01_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.05610892176628113,
+        "tim": 0.05052000284194946,
+        "upper_tier": 0.038528501987457275
+      },
+      "rmse_k": {
+        "lower_tier": 0.06340587139129639,
+        "tim": 0.05737335979938507,
+        "upper_tier": 0.08301904797554016
+      },
+      "peak_error_k": {
+        "lower_tier": 0.133697509765625,
+        "tim": 0.118927001953125,
+        "upper_tier": 0.36700439453125
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_mixed_power_01_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.23964273929595947,
+        "tim": 0.21632114052772522,
+        "upper_tier": 0.023812860250473022
+      },
+      "rmse_k": {
+        "lower_tier": 0.34330472350120544,
+        "tim": 0.3088623881340027,
+        "upper_tier": 0.03270455449819565
+      },
+      "peak_error_k": {
+        "lower_tier": 1.1837158203125,
+        "tim": 1.058929443359375,
+        "upper_tier": 0.066986083984375
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_mixed_power_02_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.05848607420921326,
+        "tim": 0.049904078245162964,
+        "upper_tier": 0.030679672956466675
+      },
+      "rmse_k": {
+        "lower_tier": 0.06489984691143036,
+        "tim": 0.05684038624167442,
+        "upper_tier": 0.05206945165991783
+      },
+      "peak_error_k": {
+        "lower_tier": 0.133697509765625,
+        "tim": 0.118927001953125,
+        "upper_tier": 0.207000732421875
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_mixed_power_02_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.24027734994888306,
+        "tim": 0.2168290615081787,
+        "upper_tier": 0.024237334728240967
+      },
+      "rmse_k": {
+        "lower_tier": 0.34697726368904114,
+        "tim": 0.31203916668891907,
+        "upper_tier": 0.03227608650922775
+      },
+      "peak_error_k": {
+        "lower_tier": 1.1837158203125,
+        "tim": 1.058929443359375,
+        "upper_tier": 0.066986083984375
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_mixed_power_03_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.04917982220649719,
+        "tim": 0.04259374737739563,
+        "upper_tier": 0.03600943088531494
+      },
+      "rmse_k": {
+        "lower_tier": 0.05608773231506348,
+        "tim": 0.05002822354435921,
+        "upper_tier": 0.06705223768949509
+      },
+      "peak_error_k": {
+        "lower_tier": 0.063690185546875,
+        "tim": 0.048919677734375,
+        "upper_tier": 0.266998291015625
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_mixed_power_03_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.24008223414421082,
+        "tim": 0.21683865785598755,
+        "upper_tier": 0.023813456296920776
+      },
+      "rmse_k": {
+        "lower_tier": 0.301121324300766,
+        "tim": 0.2711268961429596,
+        "upper_tier": 0.029552554711699486
+      },
+      "peak_error_k": {
+        "lower_tier": 0.793701171875,
+        "tim": 0.70892333984375,
+        "upper_tier": 0.0570068359375
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_high_power_single_00",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.3904635012149811,
+        "tim": 0.3524533212184906,
+        "upper_tier": 0.03424018621444702
+      },
+      "rmse_k": {
+        "lower_tier": 0.5238926410675049,
+        "tim": 0.4716353118419647,
+        "upper_tier": 0.044163841754198074
+      },
+      "peak_error_k": {
+        "lower_tier": 1.713714599609375,
+        "tim": 1.5289306640625,
+        "upper_tier": 0.10699462890625
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_high_power_single_01",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.0992400050163269,
+        "tim": 0.08506810665130615,
+        "upper_tier": 0.049311161041259766
+      },
+      "rmse_k": {
+        "lower_tier": 0.10185037553310394,
+        "tim": 0.08978565037250519,
+        "upper_tier": 0.0937836691737175
+      },
+      "peak_error_k": {
+        "lower_tier": 0.056304931640625,
+        "tim": 0.011077880859375,
+        "upper_tier": 0.37701416015625
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_high_power_single_02",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.390940397977829,
+        "tim": 0.35274702310562134,
+        "upper_tier": 0.034355372190475464
+      },
+      "rmse_k": {
+        "lower_tier": 0.41963478922843933,
+        "tim": 0.3780961036682129,
+        "upper_tier": 0.036162808537483215
+      },
+      "peak_error_k": {
+        "lower_tier": 0.823699951171875,
+        "tim": 0.738922119140625,
+        "upper_tier": 0.0570068359375
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_high_power_single_03",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.0992400050163269,
+        "tim": 0.08507785201072693,
+        "upper_tier": 0.04842841625213623
+      },
+      "rmse_k": {
+        "lower_tier": 0.10111061483621597,
+        "tim": 0.08885665237903595,
+        "upper_tier": 0.09296796470880508
+      },
+      "peak_error_k": {
+        "lower_tier": 0.056304931640625,
+        "tim": 0.011077880859375,
+        "upper_tier": 0.37701416015625
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_high_power_stacked_00",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.4670649468898773,
+        "tim": 0.42873409390449524,
+        "upper_tier": 0.11043328046798706
+      },
+      "rmse_k": {
+        "lower_tier": 0.4952375888824463,
+        "tim": 0.45540574193000793,
+        "upper_tier": 0.13345596194267273
+      },
+      "peak_error_k": {
+        "lower_tier": 0.9237060546875,
+        "tim": 0.858917236328125,
+        "upper_tier": 0.386993408203125
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_high_power_stacked_01",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.46580368280410767,
+        "tim": 0.4276294410228729,
+        "upper_tier": 0.10946640372276306
+      },
+      "rmse_k": {
+        "lower_tier": 0.5418897867202759,
+        "tim": 0.4989260733127594,
+        "upper_tier": 0.1525496244430542
+      },
+      "peak_error_k": {
+        "lower_tier": 1.293701171875,
+        "tim": 1.20892333984375,
+        "upper_tier": 0.506988525390625
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_high_power_stacked_02",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.46580368280410767,
+        "tim": 0.4276294410228729,
+        "upper_tier": 0.10946640372276306
+      },
+      "rmse_k": {
+        "lower_tier": 0.5399707555770874,
+        "tim": 0.4971136450767517,
+        "upper_tier": 0.15141324698925018
+      },
+      "peak_error_k": {
+        "lower_tier": 1.293701171875,
+        "tim": 1.20892333984375,
+        "upper_tier": 0.506988525390625
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_high_power_stacked_03",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.4670649468898773,
+        "tim": 0.42873409390449524,
+        "upper_tier": 0.11044302582740784
+      },
+      "rmse_k": {
+        "lower_tier": 0.4962453246116638,
+        "tim": 0.4563281238079071,
+        "upper_tier": 0.13366375863552094
+      },
+      "peak_error_k": {
+        "lower_tier": 0.9237060546875,
+        "tim": 0.858917236328125,
+        "upper_tier": 0.386993408203125
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_background_3mW_00",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.6322039365768433,
+        "tim": 0.5804183483123779,
+        "upper_tier": 0.14873430132865906
+      },
+      "rmse_k": {
+        "lower_tier": 0.6343128681182861,
+        "tim": 0.582336962223053,
+        "upper_tier": 0.15008771419525146
+      },
+      "peak_error_k": {
+        "lower_tier": 0.476287841796875,
+        "tim": 0.441070556640625,
+        "upper_tier": 0.0830078125
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_background_3mW_01",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.6320147514343262,
+        "tim": 0.5800478458404541,
+        "upper_tier": 0.1485362946987152
+      },
+      "rmse_k": {
+        "lower_tier": 0.6327773928642273,
+        "tim": 0.5806911587715149,
+        "upper_tier": 0.14959613978862762
+      },
+      "peak_error_k": {
+        "lower_tier": 0.556304931640625,
+        "tim": 0.511077880859375,
+        "upper_tier": 0.092987060546875
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_background_3mW_02",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.6322508454322815,
+        "tim": 0.5803710222244263,
+        "upper_tier": 0.14871326088905334
+      },
+      "rmse_k": {
+        "lower_tier": 0.6329342722892761,
+        "tim": 0.5809615254402161,
+        "upper_tier": 0.1504366099834442
+      },
+      "peak_error_k": {
+        "lower_tier": 0.556304931640625,
+        "tim": 0.511077880859375,
+        "upper_tier": 0.06298828125
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_background_3mW_03",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.6319788694381714,
+        "tim": 0.5801454782485962,
+        "upper_tier": 0.1485181450843811
+      },
+      "rmse_k": {
+        "lower_tier": 0.6356900334358215,
+        "tim": 0.5834040641784668,
+        "upper_tier": 0.14973613619804382
+      },
+      "peak_error_k": {
+        "lower_tier": 0.37628173828125,
+        "tim": 0.35107421875,
+        "upper_tier": 0.0830078125
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_background_7mW_00",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.4662429690361023,
+        "tim": 0.42815691232681274,
+        "upper_tier": 0.10961008071899414
+      },
+      "rmse_k": {
+        "lower_tier": 0.46720609068870544,
+        "tim": 0.42901328206062317,
+        "upper_tier": 0.10990417003631592
+      },
+      "peak_error_k": {
+        "lower_tier": 0.573699951171875,
+        "tim": 0.5189208984375,
+        "upper_tier": 0.136993408203125
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_background_7mW_01",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.46557992696762085,
+        "tim": 0.42737358808517456,
+        "upper_tier": 0.1094537079334259
+      },
+      "rmse_k": {
+        "lower_tier": 0.4662335515022278,
+        "tim": 0.4279482960700989,
+        "upper_tier": 0.10973220318555832
+      },
+      "peak_error_k": {
+        "lower_tier": 0.523712158203125,
+        "tim": 0.47894287109375,
+        "upper_tier": 0.12701416015625
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_background_7mW_02",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.46559983491897583,
+        "tim": 0.4275108873844147,
+        "upper_tier": 0.1094444990158081
+      },
+      "rmse_k": {
+        "lower_tier": 0.46620312333106995,
+        "tim": 0.4280523955821991,
+        "upper_tier": 0.10972224920988083
+      },
+      "peak_error_k": {
+        "lower_tier": 0.523712158203125,
+        "tim": 0.47894287109375,
+        "upper_tier": 0.12701416015625
+      }
+    },
+    {
+      "model": "train_mean",
+      "case": "hard_background_7mW_03",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.4660950005054474,
+        "tim": 0.4280795156955719,
+        "upper_tier": 0.10940569639205933
+      },
+      "rmse_k": {
+        "lower_tier": 0.4669746160507202,
+        "tim": 0.4288354516029358,
+        "upper_tier": 0.10958386212587357
+      },
+      "peak_error_k": {
+        "lower_tier": 0.573699951171875,
+        "tim": 0.5189208984375,
+        "upper_tier": 0.12701416015625
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_many_hotspots_00",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.07266652584075928,
+        "tim": 0.06839367747306824,
+        "upper_tier": 0.0167999267578125
+      },
+      "rmse_k": {
+        "lower_tier": 0.08520306646823883,
+        "tim": 0.07988442480564117,
+        "upper_tier": 0.022735340520739555
+      },
+      "peak_error_k": {
+        "lower_tier": 0.0257568359375,
+        "tim": 0.018890380859375,
+        "upper_tier": 0.0426025390625
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_many_hotspots_01",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.032812654972076416,
+        "tim": 0.03310135006904602,
+        "upper_tier": 0.03378888964653015
+      },
+      "rmse_k": {
+        "lower_tier": 0.041090384125709534,
+        "tim": 0.04153440147638321,
+        "upper_tier": 0.043707575649023056
+      },
+      "peak_error_k": {
+        "lower_tier": 0.05029296875,
+        "tim": 0.014312744140625,
+        "upper_tier": 0.003021240234375
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_many_hotspots_02",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.06909775733947754,
+        "tim": 0.06512811779975891,
+        "upper_tier": 0.017383307218551636
+      },
+      "rmse_k": {
+        "lower_tier": 0.08581032603979111,
+        "tim": 0.08126674592494965,
+        "upper_tier": 0.025299999862909317
+      },
+      "peak_error_k": {
+        "lower_tier": 0.098907470703125,
+        "tim": 0.08380126953125,
+        "upper_tier": 0.0550537109375
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_many_hotspots_03",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.06903469562530518,
+        "tim": 0.0617833137512207,
+        "upper_tier": 0.02420443296432495
+      },
+      "rmse_k": {
+        "lower_tier": 0.09221206605434418,
+        "tim": 0.083475761115551,
+        "upper_tier": 0.02986537292599678
+      },
+      "peak_error_k": {
+        "lower_tier": 0.239898681640625,
+        "tim": 0.2213134765625,
+        "upper_tier": 0.00225830078125
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_many_hotspots_04",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.07536283135414124,
+        "tim": 0.07238885760307312,
+        "upper_tier": 0.02377733588218689
+      },
+      "rmse_k": {
+        "lower_tier": 0.09091516584157944,
+        "tim": 0.08635803312063217,
+        "upper_tier": 0.03248690068721771
+      },
+      "peak_error_k": {
+        "lower_tier": 0.072021484375,
+        "tim": 0.061126708984375,
+        "upper_tier": 0.012176513671875
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_many_hotspots_05",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.11572745442390442,
+        "tim": 0.10606831312179565,
+        "upper_tier": 0.02013757824897766
+      },
+      "rmse_k": {
+        "lower_tier": 0.16816486418247223,
+        "tim": 0.15387335419654846,
+        "upper_tier": 0.026389235630631447
+      },
+      "peak_error_k": {
+        "lower_tier": 0.2064208984375,
+        "tim": 0.183837890625,
+        "upper_tier": 0.02923583984375
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_many_hotspots_06",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.05467239022254944,
+        "tim": 0.05195927619934082,
+        "upper_tier": 0.022103607654571533
+      },
+      "rmse_k": {
+        "lower_tier": 0.06764625757932663,
+        "tim": 0.06397447735071182,
+        "upper_tier": 0.027480755001306534
+      },
+      "peak_error_k": {
+        "lower_tier": 0.02105712890625,
+        "tim": 0.02008056640625,
+        "upper_tier": 0.015106201171875
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_many_hotspots_07",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.06131359934806824,
+        "tim": 0.05802449584007263,
+        "upper_tier": 0.032856106758117676
+      },
+      "rmse_k": {
+        "lower_tier": 0.08143395185470581,
+        "tim": 0.07761380821466446,
+        "upper_tier": 0.0429731160402298
+      },
+      "peak_error_k": {
+        "lower_tier": 0.031585693359375,
+        "tim": 0.039703369140625,
+        "upper_tier": 0.04736328125
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_mixed_power_00_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.01990288496017456,
+        "tim": 0.01919695734977722,
+        "upper_tier": 0.025023043155670166
+      },
+      "rmse_k": {
+        "lower_tier": 0.023456662893295288,
+        "tim": 0.022515704855322838,
+        "upper_tier": 0.038329482078552246
+      },
+      "peak_error_k": {
+        "lower_tier": 0.02459716796875,
+        "tim": 0.018707275390625,
+        "upper_tier": 0.1324462890625
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_mixed_power_00_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.0738915503025055,
+        "tim": 0.06534740328788757,
+        "upper_tier": 0.010489344596862793
+      },
+      "rmse_k": {
+        "lower_tier": 0.10109385848045349,
+        "tim": 0.09023922681808472,
+        "upper_tier": 0.013133221305906773
+      },
+      "peak_error_k": {
+        "lower_tier": 0.024810791015625,
+        "tim": 0.022674560546875,
+        "upper_tier": 0.0078125
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_mixed_power_01_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.02540719509124756,
+        "tim": 0.024465441703796387,
+        "upper_tier": 0.024206846952438354
+      },
+      "rmse_k": {
+        "lower_tier": 0.032088395208120346,
+        "tim": 0.030310967937111855,
+        "upper_tier": 0.035666413605213165
+      },
+      "peak_error_k": {
+        "lower_tier": 0.089111328125,
+        "tim": 0.083160400390625,
+        "upper_tier": 0.11761474609375
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_mixed_power_01_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.11572125554084778,
+        "tim": 0.10646739602088928,
+        "upper_tier": 0.01381605863571167
+      },
+      "rmse_k": {
+        "lower_tier": 0.14662744104862213,
+        "tim": 0.1343555450439453,
+        "upper_tier": 0.016501115635037422
+      },
+      "peak_error_k": {
+        "lower_tier": 0.423065185546875,
+        "tim": 0.382720947265625,
+        "upper_tier": 0.00738525390625
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_mixed_power_02_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.027362138032913208,
+        "tim": 0.02520751953125,
+        "upper_tier": 0.011971384286880493
+      },
+      "rmse_k": {
+        "lower_tier": 0.03738922253251076,
+        "tim": 0.03435102105140686,
+        "upper_tier": 0.017609845846891403
+      },
+      "peak_error_k": {
+        "lower_tier": 0.08441162109375,
+        "tim": 0.080352783203125,
+        "upper_tier": 0.038330078125
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_mixed_power_02_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.1184397041797638,
+        "tim": 0.10597994923591614,
+        "upper_tier": 0.014720290899276733
+      },
+      "rmse_k": {
+        "lower_tier": 0.15054690837860107,
+        "tim": 0.1349695771932602,
+        "upper_tier": 0.017462877556681633
+      },
+      "peak_error_k": {
+        "lower_tier": 0.438323974609375,
+        "tim": 0.39306640625,
+        "upper_tier": 0.008148193359375
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_mixed_power_03_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.022733867168426514,
+        "tim": 0.02261635661125183,
+        "upper_tier": 0.017845511436462402
+      },
+      "rmse_k": {
+        "lower_tier": 0.028604786843061447,
+        "tim": 0.0278327576816082,
+        "upper_tier": 0.02528131753206253
+      },
+      "peak_error_k": {
+        "lower_tier": 0.010894775390625,
+        "tim": 0.008514404296875,
+        "upper_tier": 0.02679443359375
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_mixed_power_03_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.08710786700248718,
+        "tim": 0.07942149043083191,
+        "upper_tier": 0.012113839387893677
+      },
+      "rmse_k": {
+        "lower_tier": 0.11375197768211365,
+        "tim": 0.10369235277175903,
+        "upper_tier": 0.015131620690226555
+      },
+      "peak_error_k": {
+        "lower_tier": 0.037261962890625,
+        "tim": 0.030059814453125,
+        "upper_tier": 0.010101318359375
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_high_power_single_00",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.16765117645263672,
+        "tim": 0.15310373902320862,
+        "upper_tier": 0.016454696655273438
+      },
+      "rmse_k": {
+        "lower_tier": 0.21100403368473053,
+        "tim": 0.1922854483127594,
+        "upper_tier": 0.020024871453642845
+      },
+      "peak_error_k": {
+        "lower_tier": 0.59527587890625,
+        "tim": 0.534759521484375,
+        "upper_tier": 0.025482177734375
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_high_power_single_01",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.018490731716156006,
+        "tim": 0.017741262912750244,
+        "upper_tier": 0.02396184206008911
+      },
+      "rmse_k": {
+        "lower_tier": 0.02293689362704754,
+        "tim": 0.022493408992886543,
+        "upper_tier": 0.03585682809352875
+      },
+      "peak_error_k": {
+        "lower_tier": 0.076904296875,
+        "tim": 0.0489501953125,
+        "upper_tier": 0.048248291015625
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_high_power_single_02",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.0737118124961853,
+        "tim": 0.06568509340286255,
+        "upper_tier": 0.007077127695083618
+      },
+      "rmse_k": {
+        "lower_tier": 0.10569322109222412,
+        "tim": 0.09410790354013443,
+        "upper_tier": 0.009541654959321022
+      },
+      "peak_error_k": {
+        "lower_tier": 0.29473876953125,
+        "tim": 0.2552490234375,
+        "upper_tier": 0.024505615234375
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_high_power_single_03",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.017196357250213623,
+        "tim": 0.01504567265510559,
+        "upper_tier": 0.021468043327331543
+      },
+      "rmse_k": {
+        "lower_tier": 0.02175130322575569,
+        "tim": 0.019263381138443947,
+        "upper_tier": 0.0328795500099659
+      },
+      "peak_error_k": {
+        "lower_tier": 0.076904296875,
+        "tim": 0.0489501953125,
+        "upper_tier": 0.048248291015625
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_high_power_stacked_00",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.1185411810874939,
+        "tim": 0.10545098781585693,
+        "upper_tier": 0.0340060293674469
+      },
+      "rmse_k": {
+        "lower_tier": 0.15621720254421234,
+        "tim": 0.13790448009967804,
+        "upper_tier": 0.04649842530488968
+      },
+      "peak_error_k": {
+        "lower_tier": 0.469207763671875,
+        "tim": 0.39111328125,
+        "upper_tier": 0.113037109375
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_high_power_stacked_01",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.15105155110359192,
+        "tim": 0.13756942749023438,
+        "upper_tier": 0.0429653525352478
+      },
+      "rmse_k": {
+        "lower_tier": 0.20326830446720123,
+        "tim": 0.18482495844364166,
+        "upper_tier": 0.06094016134738922
+      },
+      "peak_error_k": {
+        "lower_tier": 0.099212646484375,
+        "tim": 0.041107177734375,
+        "upper_tier": 0.0069580078125
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_high_power_stacked_02",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.07107499241828918,
+        "tim": 0.06342697143554688,
+        "upper_tier": 0.019847631454467773
+      },
+      "rmse_k": {
+        "lower_tier": 0.10256790369749069,
+        "tim": 0.09281057119369507,
+        "upper_tier": 0.02963396906852722
+      },
+      "peak_error_k": {
+        "lower_tier": 0.099212646484375,
+        "tim": 0.041107177734375,
+        "upper_tier": 0.0069580078125
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_high_power_stacked_03",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.11522665619850159,
+        "tim": 0.10344943404197693,
+        "upper_tier": 0.03290361166000366
+      },
+      "rmse_k": {
+        "lower_tier": 0.1555398404598236,
+        "tim": 0.13795940577983856,
+        "upper_tier": 0.046291936188936234
+      },
+      "peak_error_k": {
+        "lower_tier": 0.469207763671875,
+        "tim": 0.39111328125,
+        "upper_tier": 0.113037109375
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_background_3mW_00",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.260999858379364,
+        "tim": 0.2514899969100952,
+        "upper_tier": 0.08623296022415161
+      },
+      "rmse_k": {
+        "lower_tier": 0.2676353454589844,
+        "tim": 0.2565450668334961,
+        "upper_tier": 0.0881388932466507
+      },
+      "peak_error_k": {
+        "lower_tier": 0.1556396484375,
+        "tim": 0.151763916015625,
+        "upper_tier": 0.035888671875
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_background_3mW_01",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.25932779908180237,
+        "tim": 0.249825119972229,
+        "upper_tier": 0.08573839068412781
+      },
+      "rmse_k": {
+        "lower_tier": 0.26207834482192993,
+        "tim": 0.25183337926864624,
+        "upper_tier": 0.08698675036430359
+      },
+      "peak_error_k": {
+        "lower_tier": 0.26031494140625,
+        "tim": 0.241546630859375,
+        "upper_tier": 0.0439453125
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_background_3mW_02",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.2591570317745209,
+        "tim": 0.2498590350151062,
+        "upper_tier": 0.08593365550041199
+      },
+      "rmse_k": {
+        "lower_tier": 0.26212605834007263,
+        "tim": 0.25212544202804565,
+        "upper_tier": 0.08809693902730942
+      },
+      "peak_error_k": {
+        "lower_tier": 0.24676513671875,
+        "tim": 0.235382080078125,
+        "upper_tier": 0.0155029296875
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_background_3mW_03",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.259306937456131,
+        "tim": 0.24992269277572632,
+        "upper_tier": 0.0857202410697937
+      },
+      "rmse_k": {
+        "lower_tier": 0.2694617807865143,
+        "tim": 0.25811678171157837,
+        "upper_tier": 0.08730398863554001
+      },
+      "peak_error_k": {
+        "lower_tier": 0.080291748046875,
+        "tim": 0.08154296875,
+        "upper_tier": 0.033966064453125
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_background_7mW_00",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.08639505505561829,
+        "tim": 0.08617061376571655,
+        "upper_tier": 0.047184914350509644
+      },
+      "rmse_k": {
+        "lower_tier": 0.08866938948631287,
+        "tim": 0.08806204795837402,
+        "upper_tier": 0.047517284750938416
+      },
+      "peak_error_k": {
+        "lower_tier": 0.15167236328125,
+        "tim": 0.138153076171875,
+        "upper_tier": 0.048553466796875
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_background_7mW_01",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.08578407764434814,
+        "tim": 0.08543196320533752,
+        "upper_tier": 0.047054290771484375
+      },
+      "rmse_k": {
+        "lower_tier": 0.08764060586690903,
+        "tim": 0.08699826896190643,
+        "upper_tier": 0.04773179814219475
+      },
+      "peak_error_k": {
+        "lower_tier": 0.091522216796875,
+        "tim": 0.091064453125,
+        "upper_tier": 0.040435791015625
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_background_7mW_02",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.08606541156768799,
+        "tim": 0.08580270409584045,
+        "upper_tier": 0.04708334803581238
+      },
+      "rmse_k": {
+        "lower_tier": 0.08865679055452347,
+        "tim": 0.08804067224264145,
+        "upper_tier": 0.04784884676337242
+      },
+      "peak_error_k": {
+        "lower_tier": 0.09429931640625,
+        "tim": 0.0924072265625,
+        "upper_tier": 0.040252685546875
+      }
+    },
+    {
+      "model": "fno_mlp",
+      "case": "hard_background_7mW_03",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.08658468723297119,
+        "tim": 0.08639538288116455,
+        "upper_tier": 0.04715090990066528
+      },
+      "rmse_k": {
+        "lower_tier": 0.08827444911003113,
+        "tim": 0.0877661481499672,
+        "upper_tier": 0.047573499381542206
+      },
+      "peak_error_k": {
+        "lower_tier": 0.1434326171875,
+        "tim": 0.13153076171875,
+        "upper_tier": 0.04217529296875
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_many_hotspots_00",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.16318121552467346,
+        "tim": 0.14819484949111938,
+        "upper_tier": 0.02993643283843994
+      },
+      "rmse_k": {
+        "lower_tier": 0.18988168239593506,
+        "tim": 0.17247498035430908,
+        "upper_tier": 0.03735704347491264
+      },
+      "peak_error_k": {
+        "lower_tier": 0.0350341796875,
+        "tim": 0.01300048828125,
+        "upper_tier": 0.0914306640625
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_many_hotspots_01",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.039760857820510864,
+        "tim": 0.036095649003982544,
+        "upper_tier": 0.03143686056137085
+      },
+      "rmse_k": {
+        "lower_tier": 0.049213118851184845,
+        "tim": 0.04442108795046806,
+        "upper_tier": 0.038800764828920364
+      },
+      "peak_error_k": {
+        "lower_tier": 0.119598388671875,
+        "tim": 0.09271240234375,
+        "upper_tier": 0.0198974609375
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_many_hotspots_02",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.1738937497138977,
+        "tim": 0.1579805314540863,
+        "upper_tier": 0.028646618127822876
+      },
+      "rmse_k": {
+        "lower_tier": 0.2082924246788025,
+        "tim": 0.18844355642795563,
+        "upper_tier": 0.03620219603180885
+      },
+      "peak_error_k": {
+        "lower_tier": 0.128814697265625,
+        "tim": 0.123016357421875,
+        "upper_tier": 0.0675048828125
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_many_hotspots_03",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.07432356476783752,
+        "tim": 0.06571024656295776,
+        "upper_tier": 0.023742347955703735
+      },
+      "rmse_k": {
+        "lower_tier": 0.09607476741075516,
+        "tim": 0.08473123610019684,
+        "upper_tier": 0.029558254405856133
+      },
+      "peak_error_k": {
+        "lower_tier": 0.0802001953125,
+        "tim": 0.065704345703125,
+        "upper_tier": 0.022247314453125
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_many_hotspots_04",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.11230427026748657,
+        "tim": 0.10326790809631348,
+        "upper_tier": 0.028108566999435425
+      },
+      "rmse_k": {
+        "lower_tier": 0.13245561718940735,
+        "tim": 0.12134668231010437,
+        "upper_tier": 0.036344584077596664
+      },
+      "peak_error_k": {
+        "lower_tier": 0.06884765625,
+        "tim": 0.0802001953125,
+        "upper_tier": 0.00390625
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_many_hotspots_05",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.1736539900302887,
+        "tim": 0.15761971473693848,
+        "upper_tier": 0.02821466326713562
+      },
+      "rmse_k": {
+        "lower_tier": 0.22777652740478516,
+        "tim": 0.206157386302948,
+        "upper_tier": 0.03506264090538025
+      },
+      "peak_error_k": {
+        "lower_tier": 0.25091552734375,
+        "tim": 0.22052001953125,
+        "upper_tier": 0.045135498046875
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_many_hotspots_06",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.11153233051300049,
+        "tim": 0.1017579436302185,
+        "upper_tier": 0.02695724368095398
+      },
+      "rmse_k": {
+        "lower_tier": 0.13810618221759796,
+        "tim": 0.1255403310060501,
+        "upper_tier": 0.03361795097589493
+      },
+      "peak_error_k": {
+        "lower_tier": 0.108245849609375,
+        "tim": 0.089935302734375,
+        "upper_tier": 0.02972412109375
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_many_hotspots_07",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.07861298322677612,
+        "tim": 0.07206383347511292,
+        "upper_tier": 0.03139007091522217
+      },
+      "rmse_k": {
+        "lower_tier": 0.09958998113870621,
+        "tim": 0.09104276448488235,
+        "upper_tier": 0.03952553868293762
+      },
+      "peak_error_k": {
+        "lower_tier": 0.012603759765625,
+        "tim": 0.02947998046875,
+        "upper_tier": 0.05230712890625
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_mixed_power_00_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.03203138709068298,
+        "tim": 0.02991586923599243,
+        "upper_tier": 0.02572140097618103
+      },
+      "rmse_k": {
+        "lower_tier": 0.03899543359875679,
+        "tim": 0.036137208342552185,
+        "upper_tier": 0.03831040859222412
+      },
+      "peak_error_k": {
+        "lower_tier": 0.1129150390625,
+        "tim": 0.08837890625,
+        "upper_tier": 0.1162109375
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_mixed_power_00_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.08294332027435303,
+        "tim": 0.07461333274841309,
+        "upper_tier": 0.011819601058959961
+      },
+      "rmse_k": {
+        "lower_tier": 0.10870389640331268,
+        "tim": 0.09818436950445175,
+        "upper_tier": 0.014971062541007996
+      },
+      "peak_error_k": {
+        "lower_tier": 0.024200439453125,
+        "tim": 0.02960205078125,
+        "upper_tier": 0.040130615234375
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_mixed_power_01_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.03356418013572693,
+        "tim": 0.031008005142211914,
+        "upper_tier": 0.024052143096923828
+      },
+      "rmse_k": {
+        "lower_tier": 0.04269575700163841,
+        "tim": 0.03879522532224655,
+        "upper_tier": 0.03530602529644966
+      },
+      "peak_error_k": {
+        "lower_tier": 0.027252197265625,
+        "tim": 0.037994384765625,
+        "upper_tier": 0.10400390625
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_mixed_power_01_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.1168760359287262,
+        "tim": 0.10569062829017639,
+        "upper_tier": 0.014730274677276611
+      },
+      "rmse_k": {
+        "lower_tier": 0.15002192556858063,
+        "tim": 0.13530291616916656,
+        "upper_tier": 0.01836995966732502
+      },
+      "peak_error_k": {
+        "lower_tier": 0.41168212890625,
+        "tim": 0.370025634765625,
+        "upper_tier": 0.034515380859375
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_mixed_power_02_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.033063799142837524,
+        "tim": 0.03089839220046997,
+        "upper_tier": 0.013691246509552002
+      },
+      "rmse_k": {
+        "lower_tier": 0.04462340846657753,
+        "tim": 0.04099169000983238,
+        "upper_tier": 0.019505180418491364
+      },
+      "peak_error_k": {
+        "lower_tier": 0.06298828125,
+        "tim": 0.06304931640625,
+        "upper_tier": 0.0562744140625
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_mixed_power_02_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.12581366300582886,
+        "tim": 0.11368492245674133,
+        "upper_tier": 0.017469286918640137
+      },
+      "rmse_k": {
+        "lower_tier": 0.15928061306476593,
+        "tim": 0.14327102899551392,
+        "upper_tier": 0.02109609916806221
+      },
+      "peak_error_k": {
+        "lower_tier": 0.434417724609375,
+        "tim": 0.384979248046875,
+        "upper_tier": 0.049163818359375
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_mixed_power_03_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.03531688451766968,
+        "tim": 0.032576560974121094,
+        "upper_tier": 0.019648104906082153
+      },
+      "rmse_k": {
+        "lower_tier": 0.04454905539751053,
+        "tim": 0.040801361203193665,
+        "upper_tier": 0.02623567543923855
+      },
+      "peak_error_k": {
+        "lower_tier": 0.032684326171875,
+        "tim": 0.03546142578125,
+        "upper_tier": 0.023040771484375
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_mixed_power_03_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.09312868118286133,
+        "tim": 0.08381727337837219,
+        "upper_tier": 0.01281130313873291
+      },
+      "rmse_k": {
+        "lower_tier": 0.11770375072956085,
+        "tim": 0.10581003129482269,
+        "upper_tier": 0.01622188650071621
+      },
+      "peak_error_k": {
+        "lower_tier": 0.00994873046875,
+        "tim": 0.001556396484375,
+        "upper_tier": 0.003875732421875
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_high_power_single_00",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.19276902079582214,
+        "tim": 0.17336884140968323,
+        "upper_tier": 0.019252777099609375
+      },
+      "rmse_k": {
+        "lower_tier": 0.2488584816455841,
+        "tim": 0.22360257804393768,
+        "upper_tier": 0.024819381535053253
+      },
+      "peak_error_k": {
+        "lower_tier": 0.703155517578125,
+        "tim": 0.6153564453125,
+        "upper_tier": 0.0020751953125
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_high_power_single_01",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.05005648732185364,
+        "tim": 0.045684635639190674,
+        "upper_tier": 0.0264626145362854
+      },
+      "rmse_k": {
+        "lower_tier": 0.0666511207818985,
+        "tim": 0.0611334927380085,
+        "upper_tier": 0.03858417272567749
+      },
+      "peak_error_k": {
+        "lower_tier": 0.253326416015625,
+        "tim": 0.22802734375,
+        "upper_tier": 0.01348876953125
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_high_power_single_02",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.08729472756385803,
+        "tim": 0.07811951637268066,
+        "upper_tier": 0.014741569757461548
+      },
+      "rmse_k": {
+        "lower_tier": 0.11218111217021942,
+        "tim": 0.10098297148942947,
+        "upper_tier": 0.018491143360733986
+      },
+      "peak_error_k": {
+        "lower_tier": 0.186859130859375,
+        "tim": 0.174652099609375,
+        "upper_tier": 0.04791259765625
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_high_power_single_03",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.05046245455741882,
+        "tim": 0.04600843787193298,
+        "upper_tier": 0.02520817518234253
+      },
+      "rmse_k": {
+        "lower_tier": 0.06634464859962463,
+        "tim": 0.06065484881401062,
+        "upper_tier": 0.03796447440981865
+      },
+      "peak_error_k": {
+        "lower_tier": 0.253326416015625,
+        "tim": 0.22802734375,
+        "upper_tier": 0.01348876953125
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_high_power_stacked_00",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.15059837698936462,
+        "tim": 0.13815781474113464,
+        "upper_tier": 0.03601551055908203
+      },
+      "rmse_k": {
+        "lower_tier": 0.19110007584095,
+        "tim": 0.1764000803232193,
+        "upper_tier": 0.0461227148771286
+      },
+      "peak_error_k": {
+        "lower_tier": 0.452117919921875,
+        "tim": 0.4246826171875,
+        "upper_tier": 0.05999755859375
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_high_power_stacked_01",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.1750854253768921,
+        "tim": 0.16073837876319885,
+        "upper_tier": 0.04753062129020691
+      },
+      "rmse_k": {
+        "lower_tier": 0.2230948954820633,
+        "tim": 0.2049010694026947,
+        "upper_tier": 0.06215159595012665
+      },
+      "peak_error_k": {
+        "lower_tier": 0.082122802734375,
+        "tim": 0.074676513671875,
+        "upper_tier": 0.05999755859375
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_high_power_stacked_02",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.1238788366317749,
+        "tim": 0.11415013670921326,
+        "upper_tier": 0.03382822871208191
+      },
+      "rmse_k": {
+        "lower_tier": 0.16724570095539093,
+        "tim": 0.15373511612415314,
+        "upper_tier": 0.045291539281606674
+      },
+      "peak_error_k": {
+        "lower_tier": 0.082122802734375,
+        "tim": 0.074676513671875,
+        "upper_tier": 0.05999755859375
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_high_power_stacked_03",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.15092334151268005,
+        "tim": 0.13857412338256836,
+        "upper_tier": 0.03570258617401123
+      },
+      "rmse_k": {
+        "lower_tier": 0.18803630769252777,
+        "tim": 0.17354917526245117,
+        "upper_tier": 0.045712731778621674
+      },
+      "peak_error_k": {
+        "lower_tier": 0.452117919921875,
+        "tim": 0.4246826171875,
+        "upper_tier": 0.05999755859375
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_background_3mW_00",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.47620895504951477,
+        "tim": 0.4381769001483917,
+        "upper_tier": 0.12232464551925659
+      },
+      "rmse_k": {
+        "lower_tier": 0.47924667596817017,
+        "tim": 0.441037654876709,
+        "upper_tier": 0.12367859482765198
+      },
+      "peak_error_k": {
+        "lower_tier": 0.411529541015625,
+        "tim": 0.379913330078125,
+        "upper_tier": 0.077880859375
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_background_3mW_01",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.47424498200416565,
+        "tim": 0.43633949756622314,
+        "upper_tier": 0.12237709760665894
+      },
+      "rmse_k": {
+        "lower_tier": 0.4757682681083679,
+        "tim": 0.43773069977760315,
+        "upper_tier": 0.12314704060554504
+      },
+      "peak_error_k": {
+        "lower_tier": 0.480316162109375,
+        "tim": 0.440643310546875,
+        "upper_tier": 0.09393310546875
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_background_3mW_02",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.481235146522522,
+        "tim": 0.44300001859664917,
+        "upper_tier": 0.12316486239433289
+      },
+      "rmse_k": {
+        "lower_tier": 0.48310577869415283,
+        "tim": 0.4447619915008545,
+        "upper_tier": 0.1244712546467781
+      },
+      "peak_error_k": {
+        "lower_tier": 0.516387939453125,
+        "tim": 0.4776611328125,
+        "upper_tier": 0.0712890625
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_background_3mW_03",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.47420915961265564,
+        "tim": 0.43643707036972046,
+        "upper_tier": 0.12235894799232483
+      },
+      "rmse_k": {
+        "lower_tier": 0.47837376594543457,
+        "tim": 0.4401610195636749,
+        "upper_tier": 0.12354408949613571
+      },
+      "peak_error_k": {
+        "lower_tier": 0.30029296875,
+        "tim": 0.2806396484375,
+        "upper_tier": 0.083953857421875
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_background_7mW_00",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.1957164704799652,
+        "tim": 0.18429577350616455,
+        "upper_tier": 0.0631457269191742
+      },
+      "rmse_k": {
+        "lower_tier": 0.1984632909297943,
+        "tim": 0.18674087524414062,
+        "upper_tier": 0.06491996347904205
+      },
+      "peak_error_k": {
+        "lower_tier": 0.183197021484375,
+        "tim": 0.159942626953125,
+        "upper_tier": 0.0072021484375
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_background_7mW_01",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.19405296444892883,
+        "tim": 0.18251845240592957,
+        "upper_tier": 0.06362605094909668
+      },
+      "rmse_k": {
+        "lower_tier": 0.19643324613571167,
+        "tim": 0.18468350172042847,
+        "upper_tier": 0.06555213779211044
+      },
+      "peak_error_k": {
+        "lower_tier": 0.125762939453125,
+        "tim": 0.117919921875,
+        "upper_tier": 0.00250244140625
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_background_7mW_02",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.19590306282043457,
+        "tim": 0.18381071090698242,
+        "upper_tier": 0.06209629774093628
+      },
+      "rmse_k": {
+        "lower_tier": 0.20024527609348297,
+        "tim": 0.18769443035125732,
+        "upper_tier": 0.06444631516933441
+      },
+      "peak_error_k": {
+        "lower_tier": 0.130584716796875,
+        "tim": 0.122314453125,
+        "upper_tier": 0.004730224609375
+      }
+    },
+    {
+      "model": "fno_kan",
+      "case": "hard_background_7mW_03",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.1959444284439087,
+        "tim": 0.1843474805355072,
+        "upper_tier": 0.06448295712471008
+      },
+      "rmse_k": {
+        "lower_tier": 0.198207825422287,
+        "tim": 0.186442568898201,
+        "upper_tier": 0.06598100811243057
+      },
+      "peak_error_k": {
+        "lower_tier": 0.134552001953125,
+        "tim": 0.119384765625,
+        "upper_tier": 0.011810302734375
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_many_hotspots_00",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.19446715712547302,
+        "tim": 0.17779305577278137,
+        "upper_tier": 0.037018775939941406
+      },
+      "rmse_k": {
+        "lower_tier": 0.2242254912853241,
+        "tim": 0.2036478966474533,
+        "upper_tier": 0.04016554728150368
+      },
+      "peak_error_k": {
+        "lower_tier": 0.2235107421875,
+        "tim": 0.27032470703125,
+        "upper_tier": 0.042816162109375
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_many_hotspots_01",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.054583996534347534,
+        "tim": 0.038026511669158936,
+        "upper_tier": 0.025185376405715942
+      },
+      "rmse_k": {
+        "lower_tier": 0.06483001261949539,
+        "tim": 0.04667520150542259,
+        "upper_tier": 0.0337754487991333
+      },
+      "peak_error_k": {
+        "lower_tier": 0.0037841796875,
+        "tim": 0.01605224609375,
+        "upper_tier": 0.10150146484375
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_many_hotspots_02",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.1764456331729889,
+        "tim": 0.1658359169960022,
+        "upper_tier": 0.039296627044677734
+      },
+      "rmse_k": {
+        "lower_tier": 0.19996312260627747,
+        "tim": 0.18527227640151978,
+        "upper_tier": 0.04087295010685921
+      },
+      "peak_error_k": {
+        "lower_tier": 0.04766845703125,
+        "tim": 0.087158203125,
+        "upper_tier": 0.045562744140625
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_many_hotspots_03",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.12639200687408447,
+        "tim": 0.11273661255836487,
+        "upper_tier": 0.029262900352478027
+      },
+      "rmse_k": {
+        "lower_tier": 0.1406574845314026,
+        "tim": 0.12606953084468842,
+        "upper_tier": 0.033235546201467514
+      },
+      "peak_error_k": {
+        "lower_tier": 0.075408935546875,
+        "tim": 0.02484130859375,
+        "upper_tier": 0.09130859375
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_many_hotspots_04",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.12468090653419495,
+        "tim": 0.11446082592010498,
+        "upper_tier": 0.028027772903442383
+      },
+      "rmse_k": {
+        "lower_tier": 0.1425863653421402,
+        "tim": 0.13095924258232117,
+        "upper_tier": 0.030302543193101883
+      },
+      "peak_error_k": {
+        "lower_tier": 0.02557373046875,
+        "tim": 0.040008544921875,
+        "upper_tier": 0.030517578125
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_many_hotspots_05",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.20914849638938904,
+        "tim": 0.19274327158927917,
+        "upper_tier": 0.038076043128967285
+      },
+      "rmse_k": {
+        "lower_tier": 0.2346263974905014,
+        "tim": 0.21475940942764282,
+        "upper_tier": 0.040904801338911057
+      },
+      "peak_error_k": {
+        "lower_tier": 0.00543212890625,
+        "tim": 0.09600830078125,
+        "upper_tier": 0.0096435546875
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_many_hotspots_06",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.1607884168624878,
+        "tim": 0.14861774444580078,
+        "upper_tier": 0.031892329454422
+      },
+      "rmse_k": {
+        "lower_tier": 0.16826628148555756,
+        "tim": 0.15503792464733124,
+        "upper_tier": 0.03426176682114601
+      },
+      "peak_error_k": {
+        "lower_tier": 0.147003173828125,
+        "tim": 0.12939453125,
+        "upper_tier": 0.0460205078125
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_many_hotspots_07",
+      "pattern": "many_hotspots",
+      "mae_k": {
+        "lower_tier": 0.08887377381324768,
+        "tim": 0.08936631679534912,
+        "upper_tier": 0.0245455801486969
+      },
+      "rmse_k": {
+        "lower_tier": 0.11473120003938675,
+        "tim": 0.1101255863904953,
+        "upper_tier": 0.02817714773118496
+      },
+      "peak_error_k": {
+        "lower_tier": 0.002716064453125,
+        "tim": 0.080291748046875,
+        "upper_tier": 0.014373779296875
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_mixed_power_00_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.024712473154067993,
+        "tim": 0.018502026796340942,
+        "upper_tier": 0.010567724704742432
+      },
+      "rmse_k": {
+        "lower_tier": 0.030163364484906197,
+        "tim": 0.02294583059847355,
+        "upper_tier": 0.013077442534267902
+      },
+      "peak_error_k": {
+        "lower_tier": 0.014923095703125,
+        "tim": 0.0001220703125,
+        "upper_tier": 0.0479736328125
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_mixed_power_00_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.08294764161109924,
+        "tim": 0.07571366429328918,
+        "upper_tier": 0.014183849096298218
+      },
+      "rmse_k": {
+        "lower_tier": 0.11602488905191422,
+        "tim": 0.10712900012731552,
+        "upper_tier": 0.01972072385251522
+      },
+      "peak_error_k": {
+        "lower_tier": 0.041900634765625,
+        "tim": 0.045806884765625,
+        "upper_tier": 0.006378173828125
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_mixed_power_01_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.02849772572517395,
+        "tim": 0.022259503602981567,
+        "upper_tier": 0.009737521409988403
+      },
+      "rmse_k": {
+        "lower_tier": 0.03588734194636345,
+        "tim": 0.02824070304632187,
+        "upper_tier": 0.012012242339551449
+      },
+      "peak_error_k": {
+        "lower_tier": 0.07244873046875,
+        "tim": 0.062530517578125,
+        "upper_tier": 0.02978515625
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_mixed_power_01_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.12270522117614746,
+        "tim": 0.11397379636764526,
+        "upper_tier": 0.01968368887901306
+      },
+      "rmse_k": {
+        "lower_tier": 0.14182919263839722,
+        "tim": 0.13147148489952087,
+        "upper_tier": 0.02315959520637989
+      },
+      "peak_error_k": {
+        "lower_tier": 0.032012939453125,
+        "tim": 0.00927734375,
+        "upper_tier": 0.005126953125
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_mixed_power_02_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.029057949781417847,
+        "tim": 0.022510528564453125,
+        "upper_tier": 0.005247235298156738
+      },
+      "rmse_k": {
+        "lower_tier": 0.03514969348907471,
+        "tim": 0.02822611667215824,
+        "upper_tier": 0.006618139799684286
+      },
+      "peak_error_k": {
+        "lower_tier": 0.01458740234375,
+        "tim": 0.008392333984375,
+        "upper_tier": 0.004791259765625
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_mixed_power_02_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.14134952425956726,
+        "tim": 0.1307995319366455,
+        "upper_tier": 0.022664904594421387
+      },
+      "rmse_k": {
+        "lower_tier": 0.1659587025642395,
+        "tim": 0.15365995466709137,
+        "upper_tier": 0.025950275361537933
+      },
+      "peak_error_k": {
+        "lower_tier": 0.104736328125,
+        "tim": 0.043731689453125,
+        "upper_tier": 0.010894775390625
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_mixed_power_03_lo",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.026165366172790527,
+        "tim": 0.01998576521873474,
+        "upper_tier": 0.008751094341278076
+      },
+      "rmse_k": {
+        "lower_tier": 0.03226211294531822,
+        "tim": 0.024996740743517876,
+        "upper_tier": 0.010628672316670418
+      },
+      "peak_error_k": {
+        "lower_tier": 0.0091552734375,
+        "tim": 0.00396728515625,
+        "upper_tier": 0.0013427734375
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_mixed_power_03_hi",
+      "pattern": "mixed_power_pair",
+      "mae_k": {
+        "lower_tier": 0.08755534887313843,
+        "tim": 0.0856950581073761,
+        "upper_tier": 0.014964491128921509
+      },
+      "rmse_k": {
+        "lower_tier": 0.11966267973184586,
+        "tim": 0.11424120515584946,
+        "upper_tier": 0.019260844215750694
+      },
+      "peak_error_k": {
+        "lower_tier": 0.007110595703125,
+        "tim": 0.01708984375,
+        "upper_tier": 0.002044677734375
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_high_power_single_00",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.17152076959609985,
+        "tim": 0.15513575077056885,
+        "upper_tier": 0.024362534284591675
+      },
+      "rmse_k": {
+        "lower_tier": 0.2012208253145218,
+        "tim": 0.18419131636619568,
+        "upper_tier": 0.028715908527374268
+      },
+      "peak_error_k": {
+        "lower_tier": 0.2110595703125,
+        "tim": 0.185455322265625,
+        "upper_tier": 0.005584716796875
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_high_power_single_01",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.05221766233444214,
+        "tim": 0.04612201452255249,
+        "upper_tier": 0.007595241069793701
+      },
+      "rmse_k": {
+        "lower_tier": 0.06368452310562134,
+        "tim": 0.0536649152636528,
+        "upper_tier": 0.01026899740099907
+      },
+      "peak_error_k": {
+        "lower_tier": 0.16900634765625,
+        "tim": 0.090484619140625,
+        "upper_tier": 0.0040283203125
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_high_power_single_02",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.058064162731170654,
+        "tim": 0.060509055852890015,
+        "upper_tier": 0.008336305618286133
+      },
+      "rmse_k": {
+        "lower_tier": 0.09227585792541504,
+        "tim": 0.0893881618976593,
+        "upper_tier": 0.012692703865468502
+      },
+      "peak_error_k": {
+        "lower_tier": 0.028228759765625,
+        "tim": 0.035736083984375,
+        "upper_tier": 0.013763427734375
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_high_power_single_03",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.057478129863739014,
+        "tim": 0.052899450063705444,
+        "upper_tier": 0.00805017352104187
+      },
+      "rmse_k": {
+        "lower_tier": 0.06684359908103943,
+        "tim": 0.06040738895535469,
+        "upper_tier": 0.01063631009310484
+      },
+      "peak_error_k": {
+        "lower_tier": 0.1795654296875,
+        "tim": 0.122802734375,
+        "upper_tier": 0.004302978515625
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_high_power_stacked_00",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.12326076626777649,
+        "tim": 0.11129096150398254,
+        "upper_tier": 0.019485801458358765
+      },
+      "rmse_k": {
+        "lower_tier": 0.15387725830078125,
+        "tim": 0.1383522003889084,
+        "upper_tier": 0.02648107148706913
+      },
+      "peak_error_k": {
+        "lower_tier": 0.279144287109375,
+        "tim": 0.198272705078125,
+        "upper_tier": 0.001129150390625
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_high_power_stacked_01",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.14936500787734985,
+        "tim": 0.13775944709777832,
+        "upper_tier": 0.031355828046798706
+      },
+      "rmse_k": {
+        "lower_tier": 0.19502249360084534,
+        "tim": 0.17930512130260468,
+        "upper_tier": 0.03929342329502106
+      },
+      "peak_error_k": {
+        "lower_tier": 0.179901123046875,
+        "tim": 0.013214111328125,
+        "upper_tier": 0.00897216796875
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_high_power_stacked_02",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.133184015750885,
+        "tim": 0.1268441081047058,
+        "upper_tier": 0.0269109308719635
+      },
+      "rmse_k": {
+        "lower_tier": 0.1833275407552719,
+        "tim": 0.16999705135822296,
+        "upper_tier": 0.03648776188492775
+      },
+      "peak_error_k": {
+        "lower_tier": 0.0897216796875,
+        "tim": 0.119659423828125,
+        "upper_tier": 0.00372314453125
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_high_power_stacked_03",
+      "pattern": "high_power",
+      "mae_k": {
+        "lower_tier": 0.1207970678806305,
+        "tim": 0.10524904727935791,
+        "upper_tier": 0.020299196243286133
+      },
+      "rmse_k": {
+        "lower_tier": 0.15150676667690277,
+        "tim": 0.13550415635108948,
+        "upper_tier": 0.02700616419315338
+      },
+      "peak_error_k": {
+        "lower_tier": 0.258056640625,
+        "tim": 0.176513671875,
+        "upper_tier": 0.0010986328125
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_background_3mW_00",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 1.033891201019287,
+        "tim": 0.9962846040725708,
+        "upper_tier": 0.1928943395614624
+      },
+      "rmse_k": {
+        "lower_tier": 1.048262357711792,
+        "tim": 1.0147371292114258,
+        "upper_tier": 0.1955537647008896
+      },
+      "peak_error_k": {
+        "lower_tier": 1.27972412109375,
+        "tim": 1.32843017578125,
+        "upper_tier": 0.17901611328125
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_background_3mW_01",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.9730708599090576,
+        "tim": 0.9379116296768188,
+        "upper_tier": 0.18498104810714722
+      },
+      "rmse_k": {
+        "lower_tier": 0.9867063164710999,
+        "tim": 0.95481276512146,
+        "upper_tier": 0.18774735927581787
+      },
+      "peak_error_k": {
+        "lower_tier": 1.295257568359375,
+        "tim": 1.37579345703125,
+        "upper_tier": 0.18951416015625
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_background_3mW_02",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.9916003942489624,
+        "tim": 0.9550309181213379,
+        "upper_tier": 0.18953973054885864
+      },
+      "rmse_k": {
+        "lower_tier": 0.9988319873809814,
+        "tim": 0.9673524498939514,
+        "upper_tier": 0.1918521523475647
+      },
+      "peak_error_k": {
+        "lower_tier": 1.290313720703125,
+        "tim": 1.3642578125,
+        "upper_tier": 0.155792236328125
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_background_3mW_03",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 1.0704691410064697,
+        "tim": 1.020656943321228,
+        "upper_tier": 0.1968076527118683
+      },
+      "rmse_k": {
+        "lower_tier": 1.0835645198822021,
+        "tim": 1.0385122299194336,
+        "upper_tier": 0.19898271560668945
+      },
+      "peak_error_k": {
+        "lower_tier": 1.21710205078125,
+        "tim": 1.268341064453125,
+        "upper_tier": 0.191986083984375
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_background_7mW_00",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.35155704617500305,
+        "tim": 0.30316630005836487,
+        "upper_tier": 0.03893980383872986
+      },
+      "rmse_k": {
+        "lower_tier": 0.3554421365261078,
+        "tim": 0.3071315884590149,
+        "upper_tier": 0.04214109852910042
+      },
+      "peak_error_k": {
+        "lower_tier": 0.328643798828125,
+        "tim": 0.27490234375,
+        "upper_tier": 0.01263427734375
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_background_7mW_01",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.3425530791282654,
+        "tim": 0.2986237704753876,
+        "upper_tier": 0.0402890145778656
+      },
+      "rmse_k": {
+        "lower_tier": 0.3484590947628021,
+        "tim": 0.3055039346218109,
+        "upper_tier": 0.04473011568188667
+      },
+      "peak_error_k": {
+        "lower_tier": 0.23370361328125,
+        "tim": 0.191864013671875,
+        "upper_tier": 0.01025390625
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_background_7mW_02",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.34159165620803833,
+        "tim": 0.3037073016166687,
+        "upper_tier": 0.040263861417770386
+      },
+      "rmse_k": {
+        "lower_tier": 0.34804433584213257,
+        "tim": 0.31028997898101807,
+        "upper_tier": 0.044446930289268494
+      },
+      "peak_error_k": {
+        "lower_tier": 0.205596923828125,
+        "tim": 0.19317626953125,
+        "upper_tier": 0.01312255859375
+      }
+    },
+    {
+      "model": "cnn3d",
+      "case": "hard_background_7mW_03",
+      "pattern": "background_shift",
+      "mae_k": {
+        "lower_tier": 0.35105085372924805,
+        "tim": 0.30419111251831055,
+        "upper_tier": 0.03878128528594971
+      },
+      "rmse_k": {
+        "lower_tier": 0.3546794354915619,
+        "tim": 0.30830997228622437,
+        "upper_tier": 0.04259693995118141
+      },
+      "peak_error_k": {
+        "lower_tier": 0.350067138671875,
+        "tim": 0.285247802734375,
+        "upper_tier": 0.00054931640625
+      }
+    }
+  ]
+}
